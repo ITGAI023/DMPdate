@@ -1,0 +1,42 @@
+{
+ "kb_version": 1,
+ "min_app_version": "0.7.0",
+ "app_version": "0.7.0",
+ "download_url": "https://github.com/ITGAI023/DMPdate/releases/latest",
+ "notes": "首次发布：知识库第 1 版",
+ "date": "2026-11-17",
+ "files": {
+  "ai_sites.json": {
+   "sha256": "a03b36dfc67455b935754f0081b2573b727b1a0c97ca5634f0e5c9773322f924",
+   "size": 2881
+  },
+  "apps.json": {
+   "sha256": "4911d1c4acf50d1c1d2208fdc44f3f131f3d4e0f5070fc7bb7ab609b876f3e9e",
+   "size": 6946
+  },
+  "bugcheck.json": {
+   "sha256": "afa9c55ad1534402e5c0c53139365cb02a3ebfab9ddc9883f13d15f443da0380",
+   "size": 10753
+  },
+  "drivers.json": {
+   "sha256": "995c6fccda5095f59cfe375237dd9c445f6a81b0fe4d136e093514233d333a70",
+   "size": 11748
+  },
+  "events.json": {
+   "sha256": "fa0dd9d450e6c5cbd8863a4a44311998a3e6a1f019e9798682a7ea7e3dbcb047",
+   "size": 1346
+  },
+  "findings.json": {
+   "sha256": "75fd55f0724078a5b4ca3f9719bad8da114eec2ef824534fc7b3562cda0d0b39",
+   "size": 13287
+  },
+  "inspect.json": {
+   "sha256": "7bded112217d5960a4fd7dc7364412b214fed14c8aa31f525989e1499de521fc",
+   "size": 1328
+  },
+  "version.json": {
+   "sha256": "396e59608f55ef121ba0f1b07935fe166176a70fab142576a21a1a918beda36c",
+   "size": 206
+  }
+ }
+}

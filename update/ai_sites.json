@@ -1,0 +1,29 @@
+{
+  "_说明": "AI 解释用的网页端站点和 API 预设。2026-11-17 由调研核实（官方页面）；中国大陆能否直连未实测，免费政策常变，随版本更新。",
+  "sites": [
+    {"name": "DeepSeek", "url": "https://chat.deepseek.com/", "note": ""},
+    {"name": "豆包", "url": "https://www.doubao.com/chat/", "note": ""},
+    {"name": "Kimi", "url": "https://www.kimi.com/", "note": ""},
+    {"name": "千问", "url": "https://www.qianwen.com/", "note": "原通义千问"},
+    {"name": "腾讯元宝", "url": "https://yuanbao.tencent.com/chat", "note": ""},
+    {"name": "智谱清言", "url": "https://chatglm.cn/", "note": ""},
+    {"name": "文心助手", "url": "https://wenxin.baidu.com/", "note": "原文心一言"},
+    {"name": "ChatGPT", "url": "https://chatgpt.com/", "note": "需要境外网络"},
+    {"name": "Claude", "url": "https://claude.ai/new", "note": "不支持中国大陆"},
+    {"name": "Gemini", "url": "https://gemini.google.com/app", "note": "不支持中国大陆"}
+  ],
+  "api_presets": [
+    {"name": "智谱 GLM（免费）", "kind": "openai", "base_url": "https://open.bigmodel.cn/api/paas/v4", "model": "glm-4.7-flash",
+     "key_url": "https://docs.bigmodel.cn/cn/guide/models/free/glm-4.7-flash", "note": "glm-4.7-flash 官方标注免费。到智谱开放平台注册后创建 API Key。"},
+    {"name": "讯飞星火 Lite（免费）", "kind": "openai", "base_url": "https://spark-api-open.xf-yun.com/v1", "model": "lite",
+     "key_url": "https://www.xfyun.cn/doc/spark/HTTP调用文档.html", "note": "官方写明免费；密钥填控制台里 Lite 版的 APIPassword。上下文只有 8K，回答会比较简短。"},
+    {"name": "硅基流动（部分模型免费）", "kind": "openai", "base_url": "https://api.siliconflow.cn/v1", "model": "THUDM/GLM-Z1-9B-0414",
+     "key_url": "https://siliconflow.cn/pricing", "note": "价格页标「免费」的模型可以免费用，免费列表会变化，模型名可在价格页查看后修改。"},
+    {"name": "DeepSeek（付费，价格低）", "kind": "openai", "base_url": "https://api.deepseek.com", "model": "deepseek-flash",
+     "key_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing", "note": "没有免费额度，按用量付费。"},
+    {"name": "Claude（付费）", "kind": "claude", "base_url": "", "model": "claude-opus-5-5",
+     "key_url": "https://console.anthropic.com/", "note": "付费；中国大陆不在支持地区。疑难杂症效果最好，想省钱可把模型改成 claude-haiku-5-5。"},
+    {"name": "Gemini（免费层）", "kind": "openai", "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/", "model": "gemini-3.5-flash-lite",
+     "key_url": "https://aistudio.google.com/docs/pricing", "note": "免费层可用，但数据会被 Google 用于改进产品；不支持中国大陆。"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "_说明": "要读取的事件：日志 -> 事件来源 -> 事件 ID -> 类型标签（规则按标签取用）。新增只追加。",
+  "System": {
+    "Microsoft-Windows-Kernel-Power": {"41": "unexpected_reboot"},
+    "EventLog": {"6008": "unexpected_shutdown"},
+    "Microsoft-Windows-WER-SystemErrorReporting": {"1001": "bugcheck"},
+    "Microsoft-Windows-WHEA-Logger": {"17": "whea_corrected", "18": "whea_fatal", "19": "whea_corrected", "47": "whea_memory"},
+    "Display": {"4101": "gpu_tdr"},
+    "nvlddmkm": {"13": "gpu_nv_error", "14": "gpu_nv_error"},
+    "disk": {"7": "disk_bad_block", "51": "disk_paging_error", "153": "disk_io_retry"},
+    "Ntfs": {"55": "fs_corrupt"},
+    "Microsoft-Windows-Ntfs": {"55": "fs_corrupt", "98": "fs_corrupt"},
+    "stornvme": {"11": "storage_ctrl_error", "129": "storage_reset"},
+    "storahci": {"11": "storage_ctrl_error", "129": "storage_reset"},
+    "volmgr": {"46": "dump_init_failed", "161": "dump_create_failed"},
+    "Microsoft-Windows-Kernel-PnP": {"219": "driver_load_failed"},
+    "Service Control Manager": {"7031": "service_crash", "7034": "service_crash", "7045": "service_installed"},
+    "Microsoft-Windows-WindowsUpdateClient": {"19": "update_installed"}
+  },
+  "Application": {
+    "Application Error": {"1000": "app_crash"},
+    "Application Hang": {"1002": "app_hang"}
+  }
+}
