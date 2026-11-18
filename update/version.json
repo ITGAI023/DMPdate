@@ -1,1 +1,1 @@
-{"_说明": "知识库版本。联网更新时比较 kb_version；min_app_version 是能读取这一版知识库的最低软件版本。", "kb_version": 1, "min_app_version": "0.7.0", "date": "2026-11-17"}
+{"_说明": "知识库版本。联网更新时比较 kb_version；min_app_version 是能读取这一版知识库的最低软件版本。", "kb_version": 2, "min_app_version": "0.7.0", "date": "2026-11-18"}
