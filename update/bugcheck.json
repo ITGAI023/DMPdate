@@ -83,6 +83,7 @@
   "0x1C7":       {"name": "STORE_DATA_STRUCTURE_CORRUPTION", "title": "内存压缩存储的数据被破坏", "cat": "内存", "specific": true, "ref": "memory", "why": "Windows 内存压缩存储的数据结构被破坏，通常是内存不稳定，也可能是硬盘读写出错。"},
   "0x1000007E":  {"name": "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M", "title": "系统线程出现未处理的异常", "cat": "驱动", "specific": false, "ref": "driver_generic", "why": "与 0x7E 相同：某个驱动在系统线程里出现了没有处理的异常。"},
   "0x1000008E":  {"name": "KERNEL_MODE_EXCEPTION_NOT_HANDLED_M", "title": "驱动出现未处理的异常", "cat": "驱动", "specific": false, "ref": "driver_generic", "why": "与 0x8E 相同：某个内核驱动出现了没有处理的异常。"},
+  "0x20001":     {"name": "HYPERVISOR_ERROR", "title": "虚拟化层（Hyper-V）出现致命错误", "cat": "硬件", "specific": true, "ref": "hardware_oc", "steps": ["如果不需要虚拟机、WSL 或内存完整性：在「启用或关闭 Windows 功能」里取消 Hyper-V 和虚拟机平台，或在「Windows 安全中心 → 设备安全性 → 内核隔离」关闭内存完整性，重启后观察。", "进入 BIOS 确认 CPU 虚拟化（SVM / Intel VT-x）设置正常，并把 BIOS 更新到最新版本。"], "p1": {"0x26": "检测到根分区三重故障（triple fault），多由 CPU/内存超频不稳、BIOS 或虚拟化设置问题引起。"}, "why": "Windows 的虚拟化层（Hyper-V，内存完整性、WSL、虚拟机都会用到）遇到无法恢复的错误。常见原因是 CPU 或内存不稳定（超频、降压、XMP/EXPO），或 BIOS 的虚拟化支持有问题。"},
   "0xC000021A":  {"name": "WINLOGON_FATAL_ERROR", "title": "Windows 登录进程出错", "cat": "系统", "specific": true, "ref": "system_files", "why": "Windows 登录相关的系统进程崩溃，通常是系统文件损坏或更新失败。"},
   "0xDEADDEAD":  {"name": "MANUALLY_INITIATED_CRASH1", "title": "手动触发的蓝屏", "cat": "系统", "specific": true, "ref": "manual_crash", "why": "这次蓝屏是用户或调试工具主动触发的，不是故障。"}
 }

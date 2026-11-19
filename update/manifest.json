@@ -1,10 +1,10 @@
 {
- "kb_version": 2,
+ "kb_version": 3,
  "min_app_version": "0.7.0",
- "app_version": "0.7.0",
+ "app_version": "0.8.0",
  "download_url": "https://github.com/ITGAI023/DMPdate/releases/latest",
- "notes": "知识库第 2 版",
- "date": "2026-11-18",
+ "notes": "知识库第 3 版：新增 0x20001 HYPERVISOR_ERROR",
+ "date": "2026-11-19",
  "files": {
   "ai_sites.json": {
    "sha256": "a03b36dfc67455b935754f0081b2573b727b1a0c97ca5634f0e5c9773322f924",
@@ -15,8 +15,8 @@
    "size": 16788
   },
   "bugcheck.json": {
-   "sha256": "20d6583ccebd97e1fa6ab26a437fbeddef5fe0a66b6261e520dff9bf4cca4ee3",
-   "size": 24615
+   "sha256": "b435877f19df31f352f930a3cf0ba31bc2fb1326eddf5d8de65e94ec457b2d75",
+   "size": 25519
   },
   "drivers.json": {
    "sha256": "23c46fdc56181e9b0724a2d5616c1de738c3c3ec459144f42345c54b5a40114c",
@@ -35,7 +35,7 @@
    "size": 1328
   },
   "version.json": {
-   "sha256": "3b6c27d5d260a705d1fc8dbb76009620a95336472928ab6d80ae59bf440456d7",
+   "sha256": "f228806496b6706284646b73e5ad876d874d82be295a69e409275c1b7aefa610",
    "size": 206
   }
  }
